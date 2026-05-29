@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Table Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Advanced HTML Table Search</h2>
+
+<!-- Text Searches -->
+<div class="search-box">
+    <input type="text" id="exactSearch" placeholder="Exact match search">
+    <input type="text" id="fuzzySearch" placeholder="Fuzzy match search">
+</div>
+
+<!-- Checkbox Filters -->
+<div class="filters">
+    <strong>Location:</strong>
+    <label><input type="checkbox" class="locationFilter" value="india"> India</label>
+    <label><input type="checkbox" class="locationFilter" value="usa"> USA</label>
+    <label><input type="checkbox" class="locationFilter" value="uk"> UK</label>
+    <label><input type="checkbox" class="locationFilter" value="germany"> Germany</label>
+</div>
+
+<!-- Toggle Filter -->
+<div class="filters">
+    <label class="switch">
+        <input type="checkbox" id="dataRoleToggle">
+        <span class="slider"></span>
+    </label>
+    Show only Data roles
+</div>
+
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Aashish</td><td>Data Analyst</td><td>India</td></tr>
+        <tr><td>Ashish</td><td>Business Analyst</td><td>USA</td></tr>
+        <tr><td>Rohit</td><td>Developer</td><td>India</td></tr>
+        <tr><td>Mohit</td><td>Tester</td><td>UK</td></tr>
+        <tr><td>Ankit</td><td>Data Engineer</td><td>Germany</td></tr>
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
